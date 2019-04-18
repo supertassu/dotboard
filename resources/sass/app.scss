@@ -1,0 +1,26 @@
+@tailwind base;
+@tailwind components;
+
+.grid {
+    display: grid;
+    grid-auto-rows: 1fr;
+    grid-auto-columns: 1fr;
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
+
+    padding: 20px;
+}
+
+.tile {
+    @apply rounded p-5 w-full h-full bg-white;
+
+    &.center {
+        @apply flex items-center justify-center text-center;
+    }
+
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+@tailwind utilities;
